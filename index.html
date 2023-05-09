@@ -1,0 +1,106 @@
+<html lang="en">
+    <head>
+        <h1>How To</h1>
+
+        <nav>
+            <a href="#flatten">Flatten function</a>
+            <a href="#emojis">Printing emojis</a>
+            <a href="#props">Making properties</a>
+        </nav>
+
+        <style>
+            * {
+                background-color: lightgray;
+            }
+
+            a {
+                color: #4178ac;
+                font-style: oblique;
+            }
+
+            p {
+                font-family: Calibri;
+                font-size: 2rem;
+            }
+
+            li {
+                font-family: "Agency FB";
+                font-size: 150%;
+            }
+
+            h3 {
+                font-size: 3rem;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="#flatten">
+            <h3>Flatten Generator Function</h3>
+            <p>Simple Generator function that would turn [1, [2, 3]] into [1, 2, 3]</p>
+
+            <ul>
+                <li>>>> def flatten(iterable):</li>
+                <li>...         for i in iterable:</li>
+                <li>...             if isinstance(i, list):</li>
+                <li>...                 yield from flatten(i)</li>
+                <li>...             else:</li>
+                <li>...                 yield i</li>
+            </ul>
+
+        </div>
+
+        <div id="#emojis">
+            <h3>Emoji Printer</h3>
+            <p>for loop that prints 590 emojis 🙃</p>
+
+            <ul>
+                <li>>>> for i in range(128000):</li>
+                <li>...         print(chr(i))</li>
+            </ul>
+
+            <p>for a full emoji list go to</p>
+            <a href="https://github.com/jerryjliu/emoji-cheat-sheet">Emoji cheat-sheet</a>
+
+        </div>
+
+        <div id="#props">
+            <h3>Defining properties</h3>
+
+            <ul>
+                <li>>>> class Foo:</li>
+                <li>...         _spam = 0
+                <li>... </li>    
+                <li>...         @property</li>
+                <li>...         def spam(self):</li>
+                <li>...             print('getting value')</li>
+                <li>...             return self._spam</li>
+                <li>... </li>    
+                <li>...         @spam.setter</li>
+                <li>...         def spam(self, value):</li>
+                <li>...             print('setting value')</li>
+                <li>...             self._spam = value</li>
+                <li>... </li>        
+                <li>...         @spam.deleter # This is an option</li>
+                <li>...         def spam(self):</li>
+                <li>...             print('deleting value')</li>
+                <li>...             del self._spam</li>
+            </ul>
+
+            <p>Example use</p>
+
+            <ul>
+                <li>>>> foo = Foo()</li>
+                <li>>>> foo.spam</li>
+                <li>getting value</li>
+                <li>0</li>
+                <li>>>> foo.spam = 5</li>
+                <li>setting value</li>
+            </ul>
+
+        </div>
+
+    </body>
+    
+</html>
