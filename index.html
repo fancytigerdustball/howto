@@ -1,35 +1,14 @@
 <html lang="en">
     <head>
-        <h1>How To</h1>
+        <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <h1>How To <img src="https://docs.python.org/3.10/_static/py.svg" width="5%" height="5%"/></h1>
 
         <nav>
             <a href="#flatten">Flatten function</a>
             <a href="#emojis">Printing emojis</a>
             <a href="#props">Making properties</a>
         </nav>
-
-        <style>
-            a {
-                color: #4178ac;
-                font-style: oblique;
-            }
-
-            p {
-                font-family: Calibri;
-                font-size: 2rem;
-            }
-
-            li {
-                background-color: lightgray;
-                font-family: "Agency FB";
-                font-size: 150%;
-            }
-
-            h3 {
-                font-size: 3rem;
-            }
-        </style>
-        <link rel="icon" href="./images/favicon.ico" sizes="16x16" type="image/x-icon">
 
     </head>
 
@@ -58,8 +37,11 @@
                 <li>...         print(chr(i))</li>
             </ul>
 
-            <p>for a full emoji list go to</p>
-            <a href="https://github.com/jerryjliu/emoji-cheat-sheet">Emoji cheat-sheet</a>
+            <p>
+                for a full emoji list go to:
+                <a href="https://github.com/jerryjliu/emoji-cheat-sheet" target="_blank" style="size: 5rem;padding-left: 1%;">Emoji cheat-sheet</a>
+            </p>
+            
 
         </div>
 
@@ -67,7 +49,7 @@
             <h3>Defining properties</h3>
 
             <ul>
-                <li>>>> class Foo:</li>
+                <li> >>> class Foo:</li>
                 <li>...         _spam = 0
                 <li>... </li>    
                 <li>...         @property</li>
