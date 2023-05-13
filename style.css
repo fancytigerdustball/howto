@@ -88,3 +88,12 @@ ul {
     margin-left: 1%;
     width: 20rem;
 }
+img {
+    position: fixed;
+    margin: 10% 0 0 50%;
+}
+
+.image {
+    opacity: .9;
+    size: 500%;
+}
