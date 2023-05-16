@@ -48,6 +48,7 @@ body {
 a {
     color: #4178ac;
     font-style: oblique;
+    font-size: large;
     text-decoration: underline;
     padding: 5px;
     transition-duration: .3s;
@@ -91,6 +92,7 @@ ul {
 img {
     position: fixed;
     margin: 10% 0 0 50%;
+    flex: auto;
 }
 
 .image {
